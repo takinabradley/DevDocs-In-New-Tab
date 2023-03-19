@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "DevDocs In New Tab",
+  "version": "1.0",
+
+  "description": "Opens DevDocs.io in a new tab when extension icon is clicked",
+
+  "icons": {
+    "48": "icons/icon-48.ico"
+  },
+
+  "browser_action": {
+    "default_icon": "icons/icon-48.ico",
+    "default_title": "DevDocs"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
