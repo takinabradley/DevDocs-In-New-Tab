@@ -1,8 +1,9 @@
-function openDevDocsInNewTab() {
-  browser.tabs.create({
-    active: true,
-    url: "https://devdocs.io"
-  })
+function closeExtension(message) {
+  if (message.type === "close-extension") {
+    browser.extension.getViews().forEach((view) => {
+      view.window.close()
+    })
+  }
 }
 
-browser.browserAction.onClicked.addListener(openDevDocsInNewTab)
+browser.runtime.onMessage.addListener(closeExtension)
