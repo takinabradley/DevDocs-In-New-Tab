@@ -19,6 +19,13 @@
     "default_popup": "search.html"
   },
 
+  "content_scripts": [
+    {
+      "matches": ["*://devdocs.io/*"],
+      "js": ["listenForSearch.js"]
+    }
+  ],
+
   "background": {
     "scripts": ["background.js"]
   }
