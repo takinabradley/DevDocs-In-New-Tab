@@ -25,7 +25,7 @@ function closeExtension() {
   browser.runtime.sendMessage({ type: "close-extension" })
 }
 
-const input = document.getElementById("query")
+const input = document.getElementById("devdocs-search")
 input.focus()
 
 document.addEventListener("submit", async (e) => {
