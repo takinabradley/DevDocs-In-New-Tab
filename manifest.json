@@ -3,11 +3,12 @@
   "name": "DevDocs In New Tab",
   "version": "1.0",
 
-  "description": "Opens DevDocs.io in a new tab when extension icon is clicked",
+  "description": "Search DevDocs in just one click!",
 
   "icons": {
     "48": "icons/icon-48.ico"
   },
+
   "permissions": [
     "activeTab",
     "*://devdocs.io/*"
@@ -16,7 +17,7 @@
   "browser_action": {
     "default_icon": "icons/icon-48.ico",
     "default_title": "DevDocs",
-    "default_popup": "search.html"
+    "default_popup": "index.html"
   },
 
   "content_scripts": [
